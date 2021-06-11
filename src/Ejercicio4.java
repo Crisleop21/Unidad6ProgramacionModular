@@ -10,15 +10,23 @@ public class Ejercicio4{
 	int[] numeros = new int[10];
 
 	public Ejercicio4(){
-		pedirDatos(numeros);
+		rellenarArreglo(numeros);
+		mostraraArreglo(numeros);
 		mostrarDatos(numeros);
 	}
 
-	public void pedirDatos(int[] numeros) {
-	 	System.out.print("Ingresa 10 elementos: ");
-	 		for (int i = 0; i < 10; i++) {
-		 		numeros[i] = scanner.nextInt();
+	public void rellenarArreglo(int[] numeros){
+		for (int i = 0; i<10 ; i++ ) {
+			numeros[i] = (int)(Math.random()*99);
+			
 		}
+	}
+
+	public void mostraraArreglo(int[] numeros){
+	 	for (int i = 0; i < 10; i++) {
+	 		System.out.print(numeros[i]);
+	  		System.out.print("\n");
+	 }
 	}
 
 	public int determinarMayor(int[] numeros) {
