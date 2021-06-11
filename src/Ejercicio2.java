@@ -18,7 +18,6 @@ public class Ejercicio2{
 	}
 	
 
-
 	public void rellenarArreglo(int[] numeros){
 		for (int i = 0; i<10 ; i++ ) {
 			numeros[i] = (int)(Math.random()*99);

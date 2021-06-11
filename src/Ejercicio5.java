@@ -34,8 +34,7 @@ public class Ejercicio5{
 		for (i=0;i<notas.length ;i++ ) {
 			System.out.println("Alumno "+(i+1)+" Nota final: ");
 			notas[i] = scanner.nextDouble();
-			
-		}
+		} while (notas[i] != -50);
 		return notas[i];
 	}
 
